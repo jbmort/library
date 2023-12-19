@@ -68,10 +68,12 @@ function addBook(){
     makeStatus();
 }
 
-function Book(bookName, bookAuthor, readStatus) {
+class Book {
+constructor (bookName, bookAuthor, readStatus) {
     this.title = bookName;
     this.author = bookAuthor;
     this.status = readStatus;
+}
 }
 
 function makeStatus() {
